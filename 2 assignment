@@ -1,1 +1,12 @@
-deepti
+Setup Proof (VS Code, Node.js, Live Server)
+
+Steps,
+VS Code: Visual Studio Code is a code editor used to write and run JavaScript programs.
+2. Node.js: Node.js allows us to run JavaScript outside the web browser.
+3. Live Server: Live Server is a VS Code extension that runs a local web server and automatically refreshes the webpage when we save changes.
+
+JavaScript Code.
+console.log("VS Code is installed successfully.");
+console.log("Node.js is working successfully.");
+console.log("Live Server setup is completed.");
+
