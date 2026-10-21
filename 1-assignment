@@ -1,4 +1,6 @@
+QUESTION
 What happens between typing a URL and seeing the page?
+ANSWER
 URL: The browser reads the URL entered by the user.
 DNS Lookup: DNS converts the domain name into an IP address.
 Connection: The browser connects to the server using TCP and, for HTTPS, TLS.
