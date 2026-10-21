@@ -1,0 +1,53 @@
+QUESTION
+Student Marks Analyser Project
+
+**Goal:** a console program that stores student names and marks, calculates results, and prints a clean report.
+
+**Steps**
+1. Store data in arrays
+2. Validate input
+3. Calculate total, average, highest and lowest
+4. Assign grades
+5. Search a student
+6. Sort results
+7. Print with template literals
+8. Handle missing or invalid data
+9. Split logic into helper functions
+10. Test with different datasets
+
+ANSWER
+let names = ["Aman", "Deepti", "Rahul"];
+let marks = [80, 90, 60];
+
+let total = 0;
+let highest = marks[0];
+let lowest = marks[0];
+
+for (let i = 0; i < marks.length; i++) {
+    total = total + marks[i];
+
+    if (marks[i] > highest) {
+        highest = marks[i];
+    }
+
+    if (marks[i] < lowest) {
+        lowest = marks[i];
+    }
+
+    let grade;
+
+    if (marks[i] >= 80) {
+        grade = "A";
+    } else if (marks[i] >= 60) {
+        grade = "B";
+    } else {
+        grade = "C";
+    }
+
+    console.log(names[i], marks[i], grade);
+}
+
+console.log("Total:", total);
+console.log("Average:", total / marks.length);
+console.log("Highest:", highest);
+console.log("Lowest:", lowest);
