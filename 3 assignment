@@ -1,3 +1,4 @@
+QUESTION
 Terminal Navigation Practice Sheet
 Commands for macOS / Linux / Git Bash (Windows PowerShell equivalents in the last column).
 
@@ -28,7 +29,7 @@ Rename index.html to home.html, then rename it back.
 Open the folder in VS Code.
 
 
-Answer
+ANSWER
  1. Go to home directory
  cd ~
 
