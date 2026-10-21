@@ -1,1 +1,10 @@
-ho gya
+What happens between typing a URL and seeing the page?
+URL: The browser reads the URL entered by the user.
+DNS Lookup: DNS converts the domain name into an IP address.
+Connection: The browser connects to the server using TCP and, for HTTPS, TLS.
+HTTP Request: The browser sends an HTTP request to the server.
+Server Response: The server sends back HTML, CSS, JavaScript, and other resources.
+HTML Parsing: The browser converts HTML into the DOM.
+CSS Parsing: The browser reads CSS and creates the CSSOM.
+JavaScript Execution: JavaScript code runs and can change the webpage.
+Rendering: The browser calculates layout, paints the elements, and displays the webpage.
