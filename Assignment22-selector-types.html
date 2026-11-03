@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Selector Types</title>
+
+    <style>
+        /* 1. Element Selector */
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* 2. ID Selector */
+        #heading {
+            color: red;
+        }
+
+        /* 3. Class Selector */
+        .paragraph {
+            color: green;
+            font-size: 18px;
+        }
+
+        /* 4. Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 5. Group Selector */
+        h2, h3 {
+            color: purple;
+        }
+
+        /* 6. Descendant Selector */
+        div p {
+            background-color: lightyellow;
+        }
+
+        /* 7. Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Selector Types</h1>
+
+    <h2 id="heading">ID Selector Example</h2>
+
+    <p class="paragraph">
+        This is a Class Selector example.
+    </p>
+
+    <h2>Group Selector Example</h2>
+
+    <h3>Another Group Selector</h3>
+
+    <div>
+        <p>This is a Descendant Selector example.</p>
+    </div>
+
+    <h2>Attribute Selector Example</h2>
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+</html>
