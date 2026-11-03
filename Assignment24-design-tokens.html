@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Tokens</title>
+
+    <style>
+        :root {
+            --primary-color: darkblue;
+            --secondary-color: darkgreen;
+            --background-color: #f2f2f2;
+            --text-color: #333333;
+            --heading-size: 28px;
+            --spacing: 20px;
+        }
+
+        body {
+            background-color: var(--background-color);
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+        }
+
+        .container {
+            background-color: white;
+            width: 600px;
+            margin: 30px auto;
+            padding: var(--spacing);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: var(--heading-size);
+            text-align: center;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Personal Portfolio</h1>
+
+        <h2>About Me</h2>
+        <p>
+            My name is Deepti Gangwar.
+            I am a BCA Artificial Intelligence student.
+        </p>
+
+        <h2>My Skills</h2>
+        <p>Java, Python, HTML, CSS and JavaScript.</p>
+
+        <h2>My Project</h2>
+        <p>Website Development Project.</p>
+
+        <button>Contact Me</button>
+
+    </div>
+
+</body>
+</html>
