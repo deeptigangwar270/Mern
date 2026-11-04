@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Variants</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 220px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        .profile {
+            border-top: 5px solid blue;
+        }
+
+        .product {
+            border-top: 5px solid green;
+        }
+
+        .featured {
+            border-top: 5px solid orange;
+            background-color: #fff3e0;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Different Card Variants</h1>
+
+    <div class="container">
+
+        <div class="card profile">
+            <h2>Profile Card</h2>
+            <p>Name: Deepti</p>
+            <p>Student of BCA</p>
+            <button>View Profile</button>
+        </div>
+
+        <div class="card product">
+            <h2>Product Card</h2>
+            <p>Product: Laptop</p>
+            <p>Price: ₹45000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card featured">
+            <h2>Featured Card</h2>
+            <p>Welcome to my website!</p>
+            <p>Learn HTML and CSS.</p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
