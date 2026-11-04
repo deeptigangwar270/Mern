@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile and Product Card</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .profile {
+            border-top: 5px solid blue;
+        }
+
+        .product {
+            border-top: 5px solid green;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Profile and Product Cards</h1>
+
+    <div class="container">
+
+        <!-- Profile Card -->
+        <div class="card profile">
+
+            <h2>Profile Card</h2>
+
+            <h3>Deepti Gangwar</h3>
+
+            <p>BCA Student</p>
+
+            <p>Skills: HTML, CSS, Java, Python</p>
+
+            <button>View Profile</button>
+
+        </div>
+
+        <!-- Product Card -->
+        <div class="card product">
+
+            <h2>Product Card</h2>
+
+            <h3>Laptop</h3>
+
+            <p>Price: ₹45,000</p>
+
+            <p>High Performance Laptop</p>
+
+            <button>Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
