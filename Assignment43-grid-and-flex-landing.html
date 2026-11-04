@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grid and Flex Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar using Flexbox */
+        nav {
+            background-color: navy;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h2 {
+            margin: 0;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Main section using Grid */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 30px;
+            padding: 60px 40px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            color: navy;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Buttons using Flexbox */
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-color: navy;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image {
+            background-color: lightblue;
+            min-height: 250px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 30px 20px;
+            }
+
+            .content h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>MyWebsite</h2>
+
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+
+            <p>
+                I am a BCA student interested in
+                programming, web development and AI.
+                This is my landing page.
+            </p>
+
+            <div class="buttons">
+                <button>Get Started</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <div class="image">
+            My Image Section
+        </div>
+
+    </section>
+
+</body>
+</html>
