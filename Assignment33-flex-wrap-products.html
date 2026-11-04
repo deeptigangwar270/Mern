@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex Wrap Products</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 200px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Laptop</h2>
+            <p>Price: ₹45000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>Mobile</h2>
+            <p>Price: ₹15000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>Headphones</h2>
+            <p>Price: ₹2000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>Keyboard</h2>
+            <p>Price: ₹1000</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <h2>Mouse</h2>
+            <p>Price: ₹500</p>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
