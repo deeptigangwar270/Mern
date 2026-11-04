@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f1f5f9;
+        }
+
+        /* Header */
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1e40af;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Portfolio Grid */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px gray;
+        }
+
+        .card h2 {
+            color: darkblue;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background-color: lightblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .portfolio {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Deepti Gangwar</h1>
+        <p>Welcome to My Portfolio</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Portfolio Sections -->
+    <main class="portfolio">
+
+        <section class="card" id="home">
+            <h2>Home</h2>
+            <p>
+                Hello! I am Deepti Gangwar.
+                I am a BCA student.
+            </p>
+        </section>
+
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am interested in programming,
+                web development and Artificial Intelligence.
+            </p>
+        </section>
+
+        <section class="card" id="skills">
+            <h2>My Skills</h2>
+
+            <div class="skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+            </div>
+        </section>
+
+        <section class="card" id="projects">
+            <h2>My Projects</h2>
+            <p>1. Personal Portfolio Website</p>
+            <p>2. Student Marks Analyser</p>
+            <p>3. Web Development Project</p>
+        </section>
+
+        <section class="card" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Location: Bareilly, Uttar Pradesh</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
