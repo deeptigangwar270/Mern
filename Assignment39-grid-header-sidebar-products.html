@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Header Sidebar Products</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f1f5f9;
+        }
+
+        .layout {
+            display: grid;
+
+            grid-template-columns: 200px 1fr;
+
+            grid-template-areas:
+                "header header"
+                "sidebar products";
+
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            grid-area: header;
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .sidebar p {
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        /* Products */
+        .products {
+            grid-area: products;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(180px, 1fr));
+
+            gap: 20px;
+            align-content: start;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px gray;
+        }
+
+        .card h3 {
+            color: darkblue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+
+            .layout {
+                grid-template-columns: 1fr;
+
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "products";
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- Header -->
+        <header class="header">
+            <h2>My Shopping Website</h2>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Categories</h3>
+
+            <p>Electronics</p>
+            <p>Clothing</p>
+            <p>Mobiles</p>
+            <p>Accessories</p>
+
+        </aside>
+
+        <!-- Products -->
+        <main class="products">
+
+            <div class="card">
+                <h3>Laptop</h3>
+                <p>Price: ₹45000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Mobile</h3>
+                <p>Price: ₹15000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Headphones</h3>
+                <p>Price: ₹2000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Keyboard</h3>
+                <p>Price: ₹1000</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Mouse</h3>
+                <p>Price: ₹500</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="card">
+                <h3>Smart Watch</h3>
+                <p>Price: ₹3000</p>
+                <button>Buy Now</button>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
